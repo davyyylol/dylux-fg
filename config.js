@@ -25,14 +25,14 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'DyLux┃ᴮᴼᵀ' 
-global.author = '@fg98' 
-global.fgig = '▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff\n' 
-global.dygp = 'https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU'
-global.fgsc = 'https://github.com/FG98F/dylux-fg' 
-global.fgyt = 'https://youtube.com/fg98f'
-global.fgpyp = 'https://paypal.me/fg98f'
-global.fglog = 'https://i.imgur.com/Owmb93c.png' 
+global.packname = 'ZenoBot' 
+global.author = 'Zeno' 
+global.fgig = '▢ Seguici su Instagram instagram.com/zenobot_official\n' 
+global.dygp = 'https://chat.whatsapp.com/IO9jmed2ejHiN4unRZleU'
+global.fgsc = 'https://github.com/_._._._' 
+global.fgyt = 'https://youtube.com/'
+global.fgpyp = 'https://paypal.me/'
+global.fglog = 'https://i.imgur.com/' 
 
 global.wait = '*⌛ _Cargando..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
