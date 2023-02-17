@@ -576,16 +576,16 @@ Para desactivar esta función, escriba
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '👑 Este comando solo puede ser utilizado por el *Creador del bot*',
-        owner: '🔱 Este comando solo puede ser utilizado por el *Dueño del Bot*',
-        mods: '🔰  Esta función es solo para *Para moderadores del Bot*',
+        rowner: '👑 Questo comando può essere utilizzato solo dal creatore del bot',
+        owner: '🔱 Questo comando può essere utilizzato solo dal creatore del bot',
+        mods: '🔰  Questo comand può essere utilizzato solo dai mod del bot',
         premium: '💠 Este comando es solo para miembros *Premium*\n\nEscribe */premium* para más info',
-        group: '⚙️ ¡Este comando solo se puede usar en grupos!',
-        private: '📮 Este comando solo se puede usar en el chat *privado del Bot*',
-        admin: '🛡️ Este comando es solo para *Admins* del grupo',
-        botAdmin: '💥 ¡Para usar este comando debo ser *Administrador!*',
+        group: '⚙️ Questo comando è utilizzabile solo nei gruppi',
+        private: '📮 Questo comando è utilizzabile solo in privato',
+        admin: '🛡️ Questo comando è utilizzabile solo dagli admin del gruppo',
+        botAdmin: '💥 Non sono admin del gruppo, pertanto non posso effettuare questa azione',
         unreg: '📇 Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre.edad*\n\n📌Ejemplo : */reg dylux.16*',
-        restrict: '🔐 Esta característica está *deshabilitada*'
+        restrict: '🔐 Funzione disattivata'
     }[type]
     if (msg) return conn.sendButton(m.chat, msg, fgig, null, [['🔖 OK', 'khajs'], ['⦙☰ Menu', '/menu'] ], m)
 }
