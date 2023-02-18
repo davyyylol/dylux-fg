@@ -184,7 +184,7 @@ const listMessage = {
 */
 
 m.reply(`
-✅ *${type}* Se *${isEnable ? 'Abilitato' : 'Disattivato'}* ${isAll ? 'per questa chat' : isUser ? '' : 'per questa chat'}
+✅ *${type}* ora *${isEnable ? 'Abilitato' : 'Disattivato'}* ${isAll ? 'per questa chat' : isUser ? '' : 'per questa chat'}
 `.trim()) 
 
 }
