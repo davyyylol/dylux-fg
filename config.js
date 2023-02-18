@@ -26,7 +26,7 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = 'ZenoBot' 
-global.author = 'Zeno' 
+global.author = 'ZenoProjects' 
 global.fgig = '▢ Seguici su Instagram instagram.com/zenobot_official\n' 
 global.dygp = 'https://chat.whatsapp.com/IO9jmed2ejHiN4unRZleU'
 global.fgsc = 'https://github.com/_._._._' 
