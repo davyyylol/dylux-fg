@@ -184,7 +184,7 @@ const listMessage = {
 */
 
 m.reply(`
-✅ ${type} ora ${isEnable ? 'attivato' : 'disattivato'} ${isAll ? 'per questa chat, mo cinca manda link lu fazzu esse tu fore meu a cauci nculu' : isUser ? '' : 'per questa chat'}
+✅ ${type} ora ${isEnable ? 'attivato' : 'disattivato'} ${isAll ? 'per questa chat mo cinca manda link lu fazzu esse tu fore meu a cauci nculu' : isUser ? '' : 'per questa chat'}
 `.trim()) 
 
 }
