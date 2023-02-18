@@ -193,7 +193,7 @@ const listMessage = {
 */
 
 m.reply(`
-✅ *${type}* Se *${isEnable ? 'Activó' : 'Desactivó'}* ${isAll ? 'para este bot' : isUser ? '' : 'para este chat'}
+✅ *${type}* Se *${isEnable ? 'Abilitato' : 'Disattivato'}* ${isAll ? 'per questa chat' : isUser ? '' : 'per questa chat'}
 `.trim()) 
 
 }
