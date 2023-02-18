@@ -4,19 +4,10 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 	
 const sections = [
    {
-	title: `≡ Lista de Opciones`,
+	title: `≡ Opzioni`,
 	rows: [
 	{title: "🔮 | Welcome", rowId: `${usedPrefix + command} welcome`},
-	{title: "🌎 | Public", rowId: `${usedPrefix + command} public`},
-	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
-	{title: "🧬 | OnlyLatinos", rowId: `${usedPrefix + command} onlylatinos`},
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
-    {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
-	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
-	{title: "🗣️ | ChatBot", rowId: `${usedPrefix + command} chatbot`},
-	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
-	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
-	{title: "🛡️ | Restrict", rowId: `${usedPrefix + command} restrict`},
 	{title: "💬 | OnlyPv", rowId: `${usedPrefix + command} onlydm`},
 	{title: "👥 | OnlyGp", rowId: `${usedPrefix + command} onlygp`}
 	]
@@ -24,10 +15,10 @@ const sections = [
 ]
 
 const listMessage = {
-  text: '\nAquí tiene una lista de lo que puede activar y desactivar',
+  text: '\nEcco un elenco di ciò che puoi attivare e disattivare',
   footer: fgig,
-  title: `≡ Lista de Opciones`,
-  buttonText: "Click Aquí",
+  title: `≡ Opzioni`,
+  buttonText: "Clicca qui",
   sections
 }
 
