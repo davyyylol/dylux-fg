@@ -6,8 +6,8 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     m.reply('✅ Messaggio di abbandono impostato')
   } else throw `✳️ Inserisci il messaggio\nEsempio: /setbye Addio @user
   
-  Prefissi disponibili:
-  @user (tag della persona che ha abbandonato)`
+Prefissi disponibili:
+@user (tag della persona che ha abbandonato)`
 }
 handler.help = ['setbye <text>']
 handler.tags = ['group']
