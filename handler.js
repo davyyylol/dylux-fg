@@ -503,7 +503,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             }, 'apikey')
                             // this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                             this.sendButton(id, text, fgig, action === 'add' ? wel : lea, [     
-                             [(action == 'add' ? '⏍ INFO' : 'ッ'), (action == 'add' ? '/info' : ' ')] ], null, {mentions: [user]})
+                             [(action == 'add' ? '' : 'ッù'), (action == 'add' ? '' : ' ')] ], null, {mentions: [user]})
                           
                     }
                 }
