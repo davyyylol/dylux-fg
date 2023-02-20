@@ -5,6 +5,7 @@ let handler = async (m, { conn, text, isROwner, isOwner }) => {
     global.db.data.chats[m.chat].sBye = text
     m.reply('✅ Messaggio di abbandono impostato')
   } else throw `✳️ Inserisci il messaggio\nEsempio: /setbye Addio @user
+  
   Prefissi disponibili:
   @user (tag della persona che ha abbandonato)`
 }
