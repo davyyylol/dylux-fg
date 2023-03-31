@@ -587,7 +587,7 @@ global.dfail = (type, m, conn) => {
         unreg: '📇 Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre.edad*\n\n📌Ejemplo : */reg dylux.16*',
         restrict: '🔐 Funzione disattivata'
     }[type]
-    
+    if (msg) return conn.sendButton(m.chat, msg, fgig, null, [['⦙☰ Menu', '/menu'] ], m)
 }
 
 let file = global.__filename(import.meta.url, true)
