@@ -582,8 +582,8 @@ global.dfail = (type, m, conn) => {
         premium: '💠 Este comando es solo para miembros *Premium*\n\nEscribe */premium* para más info',
         group: '⚙️ Questo comando è utilizzabile solo nei gruppi',
         private: '📮 Questo comando è utilizzabile solo in privato',
-        admin: '🛡️ Questo comando è utilizzabile solo dagli admin del gruppo',
-        botAdmin: '💥 Non sono admin del gruppo, pertanto non posso effettuare questa azione',
+        admin: '🛡️ Questo comando è utilizzabile solo dagli amministratori del gruppo',
+        botAdmin: '💥 Non sono amministratore del gruppo, pertanto non posso effettuare questa azione',
         unreg: '📇 Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre.edad*\n\n📌Ejemplo : */reg dylux.16*',
         restrict: '🔐 Funzione disattivata'
     }[type]
