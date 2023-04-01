@@ -25,7 +25,7 @@ try {
     if (!url) throw '❎ Errore nel download del video'
     conn.sendFile(m.chat, url, 'fb.mp4', `
 ┌─⊷ *TIKTOK DL-2*
-▢ *Nickname:* ${nickname} ${description ? `\n▢ *Descripción:* ${description}` : ''}
+▢ *Nickname:* ${nickname} ${description ? `\n▢ *Descrizione del video:* ${description}` : ''}
 └───────────`, m)
 m.react(done)
 } catch {
