@@ -12,7 +12,7 @@ try {
     let te = `
 ┌─⊷ TIKTOK
 ▢ *Username:* ${p.author}
-▢ *Descripción:* ${p.title}
+▢ *Descrizione del video:* ${p.title}
 └───────────`
     conn.sendFile(m.chat, p.nowm, 'tt.mp4', te, m)
     m.react(done)
