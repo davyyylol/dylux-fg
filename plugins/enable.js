@@ -6,10 +6,7 @@ const sections = [
    {
 	title: `≡ Opzioni`,
 	rows: [
-	{title: "🔮 | Welcome", rowId: `${usedPrefix + command} welcome`},
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
-	{title: "💬 | OnlyPv", rowId: `${usedPrefix + command} onlydm`},
-	{title: "👥 | OnlyGp", rowId: `${usedPrefix + command} onlygp`}
 	]
     },
 ]
