@@ -25,7 +25,7 @@ Hai ricevuto un warn da un amministratore
 Se riceverai *${war}* warn sarai rimosso dal gruppo`, who)
         } else if (warn == war) {
             global.db.data.users[who].warn = 0
-            m.reply(`⛔ L'utente ha superato il *${war}* Quindi verrà rimosso`)
+            m.reply(`⛔ L'utente ha superato *${war}* warn quindi verrà rimosso`)
             await time(3000)
             await conn.groupParticipantsUpdate(m.chat, [who], 'remove')
             m.reply(`♻️ Sei stato rimosso dal gruppo *${groupMetadata.subject}* perchè sei stato warnato *${war}* veces`, who)
