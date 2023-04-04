@@ -10,8 +10,7 @@ let handler = async (m, { conn, args, groupMetadata}) => {
          global.db.data.users[who].warn -= 1
          m.reply(`⚠️ *Reset warn*
          
-▢ Warn rimossi: *Tutti*
-▢ Warn disponibili ora: *${warn - 2}*`)
+✅ I warn dell'utente sono stati resettati`)
          m.reply(`✳️ Un amministratore del gruppo ha resettato i tuoi warn, ora hai *${warn - 2}*`, who)
          } else if (warn == 0) {
             m.reply('✳️ Questo utente non ha warn')
