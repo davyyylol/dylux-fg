@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, args, groupMetadata, usedPrefix, command }
 ▢ *Warn ricevuti:* ${warn + 1}/${war}
 ▢ *Motivo:* ${text}`, null, { mentions: [who] }) 
             m.reply(`
-⚠️ *ADVERTENCIA* ⚠️
+⚠️ *AVVISO* ⚠️
 Hai ricevuto un warn da un amministratore
 
 ▢ *Warns:* ${warn + 1}/${war} 
