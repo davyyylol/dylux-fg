@@ -4,8 +4,7 @@ let handler = async (m, { conn, args, groupMetadata}) => {
        if (!(who in global.db.data.users)) throw `✳️ Utente non trovato`
        let warn = global.db.data.users[who].warn
        let name = conn.getName(who)
-      m.reply(`
-👤 *Utente :* ${name} 
+      m.reply(`👤 *Utente :* ${name} 
 ⚠️ *Warn ricevuti :* ${warn}`)
 }
 
