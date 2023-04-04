@@ -17,9 +17,9 @@ let handler = async (m, { conn, args, groupMetadata}) => {
         }
 
 }
-handler.help = ['resetwarn @user']
+handler.help = ['rimwarn @user']
 handler.tags = ['group']
-handler.command = ['resetwarn', 'unwarn'] 
+handler.command = ['rimwarn', 'unwarn'] 
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
