@@ -6,8 +6,8 @@ let handler = async (m, { conn, args, groupMetadata}) => {
        let name = conn.getName(who)
       m.reply(`
  *Avvertenza*
-▢ *Nombe :* ${name} 
-▢ *Warn  :* ${warn}`)
+👤 *Utente :* ${name} 
+⚠️ *Warn ricevuti :* ${warn}`)
 }
 
 handler.help = ['warns']
