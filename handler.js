@@ -544,7 +544,7 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-eport aync unction delteUpdate(message) {
+eport sync unction delteUpdate(message) {
     tr {
         const { frome, i, particiant } = mesae
         i (fromM)
