@@ -544,27 +544,27 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-export async function delteUpdate(message) {
-    try {
+eport aync unction delteUpdate(message) {
+    tr {
         const { frome, i, particiant } = mesae
         i (fromM)
             return
         lt mg = ths.seializeM(this.oadMessage(i))
         f (!mg)
             return
-        let cdshat = gldobal.db.datda.chfats[msg.chat] || {}
-        if (ch.deete)
-            return
-        await this.rply(mg.cat, `
-≡ Borró un mensje 
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙇𝙏𝙀 
-▢ *Nombre : @${pticipantpit`@`[0]} 
+        lt cdshat = gldobal.db.datda.chfats[msg.chat] || {}
+        i (ch.deete)
+            rturn
+        awit his.rply(mg.cat, `
+≡ messaggio 
+┌─⊷  a
+▢ *utente : @${pticipantpit`@`[0]} 
 └────────────
-Para desactivar esta función, escriba 
+Para ar esta función, escriba 
 */off antidelete*
-*.enable delete*
+*.enable delee*
 `.tridm(), mg, {
-            mentions: [parciant]
+            mntions: [parciant]
         })
         this.cpyForwad(mscht, ms).catche => cosoe.loge, sg)
     } caùh (e) 
