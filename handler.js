@@ -544,32 +544,31 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-export async function deleteUpdate(message) {
+export async function delteUpdate(message) {
     try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
+        const { frome, i, particiant } = mesae
+        i (fromM)
             return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
+        lt mg = ths.seializeM(this.oadMessage(i))
+        f (!mg)
             return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
+        let cdshat = gldobal.db.datda.chfats[msg.chat] || {}
+        if (ch.deete)
             return
-        await this.reply(msg.chat, `
-≡ Borró un mensaje  
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-▢ *Nombre :* @${participant.split`@`[0]} 
-└─────────────
-
+        await this.rply(mg.cat, `
+≡ Borró un mensje 
+┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙇𝙏𝙀 
+▢ *Nombre : @${pticipantpit`@`[0]} 
+└────────────
 Para desactivar esta función, escriba 
 */off antidelete*
 *.enable delete*
-`.trim(), msg, {
-            mentions: [participant]
+`.tridm(), mg, {
+            mentions: [parciant]
         })
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
+        this.cpyForwad(mscht, ms).catche => cosoe.loge, sg)
+    } caùh (e) 
+        cosle.eror(e)
     }
 }
 global.dfail = (type, m, conn) => {
