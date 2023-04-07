@@ -546,30 +546,22 @@ export async function groupsUpdate(groupsUpdate) {
 
 export async function deleteUpdate(message) {
     try {
-        const { frmMe, id, participant } = message
-        if (frmMe)
-            rturn
-        let mg = this.serializeM(this.loadMessage(id))
+        const { fromMe, id, participant } = message
+        if (fromMe)
+            return
+        let msg = this.serializeM(this.loadMessage(id))
         if (!msg)
             return
-        let chat = gobal.dbdata.chts[mg.chat] || {}
-        if (chat.deete)
+        let chat = global.db.data.chats[msg.chat] || {}
+        if (chat.delete)
             return
-        awit tis.repy(msg.chat, `
-≡ Borró un mensaje  
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-▢ *Nombre :* @${participan.split`@`[0]} 
-└─────────────
-Para desactivar esta función, escriba 
-*/off antidelete*
-*.enable delete*
-`.trim(), sg, {
-            menions: [paricipant]
+        await this.reply(msg.chat, `
+`.trim(), msg, {
+            mentions: [participant]
         })
-        tis.copyForward(msg.cat, msg).cach(e => cnsole.log(e, msg))
+        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
-        conole.error(e))
-    }
+        console.error(e)
 }
 global.dfail = (type, m, conn) => {
     let msg = {
