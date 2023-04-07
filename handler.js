@@ -544,35 +544,6 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-export async function deleteUpdate(message) {
-    try {
-        const { fromMe, id, participant } = message
-        if (fromMe)
-            return
-        let msg = this.serializeM(this.loadMessage(id))
-        if (!msg)
-            return
-        let chat = global.db.data.chats[msg.chat] || {}
-        if (chat.delete)
-            return
-        await this.reply(msg.chat, `
-≡ Messaggio eliminato  
-┌─⊷  Antidel 
-▢ *Numero :* @${participant.split`@`[0]} 
-└─────────────
-
-Per disattivare questa funzione scrivi 
-*/off antidelete*
-*.enable delete*
-`.trim(), msg, {
-            mentions: [participant]
-        })
-        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
-    } catch (e) {
-        console.error(e)
-        
-            }
-}
 
 global.dfail = (type, m, conn) => {
     let msg = {
