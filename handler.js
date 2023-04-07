@@ -544,31 +544,31 @@ export async function groupsUpdate(groupsUpdate) {
     }
 }
 
-eport sync unction delteUpdate(message) {
-    tr {
-        const { frome, i, particiant } = mesae
-        i (fromM)
-            return
-        lt mg = ths.seializeM(this.oadMessage(i))
-        f (!mg)
-            return
-        lt cdshat = gldobal.db.datda.chfats[msg.chat] || {}
-        i (ch.deete)
+export async function deleteUpdate(message) {
+    try {
+        const { frmMe, id, participant } = message
+        if (frmMe)
             rturn
-        awit his.rply(mg.cat, `
-≡ messaggio 
-┌─⊷  a
-▢ *utente : @${pticipantpit`@`[0]} 
-└────────────
-Para ar esta función, escriba 
+        let mg = this.serializeM(this.loadMessage(id))
+        if (!msg)
+            return
+        let chat = gobal.dbdata.chts[mg.chat] || {}
+        if (chat.deete)
+            return
+        awit tis.repy(msg.chat, `
+≡ Borró un mensaje  
+┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+▢ *Nombre :* @${participan.split`@`[0]} 
+└─────────────
+Para desactivar esta función, escriba 
 */off antidelete*
-*.enable delee*
-`.tridm(), mg, {
-            mntions: [parciant]
+*.enable delete*
+`.trim(), sg, {
+            menions: [paricipant]
         })
-        this.cpyForwad(mscht, ms).catche => cosoe.loge, sg)
-    } caùh (e) 
-        cosle.eror(e)
+        tis.copyForward(msg.cat, msg).cach(e => cnsole.log(e, msg))
+    } catch (e) {
+        conole.error(e))
     }
 }
 global.dfail = (type, m, conn) => {
