@@ -569,7 +569,9 @@ Per disattivare questa funzione scrivi
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
+    }
 }
+
 global.dfail = (type, m, conn) => {
     let msg = {
         rowner: '👑 Questo comando può essere utilizzato solo dal creatore del bot',
