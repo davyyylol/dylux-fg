@@ -556,7 +556,14 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-`.trim(), msg, {
+≡ messaggio  
+┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+▢ *Nome :* @${participant.split`@`[0]} 
+└─────────────
+Per disattivare questa funzione scrivi 
+*/off antidelete*
+*/enable delete*
+`.trim(), mg, {
             mentions: [participant]
         })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
